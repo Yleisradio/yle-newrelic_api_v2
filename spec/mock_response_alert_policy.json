@@ -1,0 +1,104 @@
+{
+  "alert_policies": [
+    {
+      "id": 123456,
+      "type": "server",
+      "name": "Test Policy",
+      "enabled": true,
+      "conditions": [
+        {
+          "id": 123457,
+          "type": "disk_io",
+          "severity": "caution",
+          "threshold": 77,
+          "trigger_minutes": 10,
+          "enabled": true
+        },
+        {
+          "id": 123458,
+          "type": "disk_io",
+          "severity": "critical",
+          "threshold": 88,
+          "trigger_minutes": 10,
+          "enabled": true
+        },
+        {
+          "id": 123459,
+          "type": "fullest_disk",
+          "severity": "caution",
+          "threshold": 66,
+          "trigger_minutes": 10,
+          "enabled": true
+        },
+        {
+          "id": 123460,
+          "type": "fullest_disk",
+          "severity": "critical",
+          "threshold": 88,
+          "trigger_minutes": 10,
+          "enabled": true
+        },
+        {
+          "id": 123461,
+          "type": "memory",
+          "severity": "caution",
+          "threshold": 66,
+          "trigger_minutes": 10,
+          "enabled": true
+        },
+        {
+          "id": 123462,
+          "type": "memory",
+          "severity": "critical",
+          "threshold": 88,
+          "trigger_minutes": 10,
+          "enabled": true
+        },
+        {
+          "id": 123463,
+          "type": "cpu",
+          "severity": "caution",
+          "threshold": 66,
+          "trigger_minutes": 10,
+          "enabled": true
+        },
+        {
+          "id": 123464,
+          "type": "cpu",
+          "severity": "critical",
+          "threshold": 88,
+          "trigger_minutes": 10,
+          "enabled": true
+        },
+        {
+          "id": 123465,
+          "type": "server_downtime",
+          "severity": "downtime",
+          "trigger_minutes": 55,
+          "enabled": false
+        }
+      ],
+      "links": {
+        "notification_channels": [
+          123466,
+          123467,
+          123468,
+          123469,
+          123470,
+          123471
+        ],
+        "servers": []
+      }
+    }
+  ],
+  "links": {
+    "alert_policy.notification_channels": "/v2/notification_channels?ids={notification_channels_ids}",
+    "alert_policy.notification_channel": "/v2/notification_channels/{notification_channel_id}",
+    "alert_policy.applications": "/v2/applications?ids={application_ids}",
+    "alert_policy.application": "/v2/applications/{application_id}",
+    "alert_policy.key_transactions": "/v2/key_transactions?ids={key_transaction_ids}",
+    "alert_policy.key_transaction": "/v2/key_transactions/{key_transaction_id}",
+    "alert_policy.servers": "/v2/servers?ids={server_ids}",
+    "alert_policy.server": "/v2/servers/{server_id}"
+  }
+}

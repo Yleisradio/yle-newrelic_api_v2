@@ -1,0 +1,29 @@
+{
+  "notification_channels": [
+    {
+      "id": 123473,
+      "type": "user",
+      "downtime_only": false,
+      "mobile_alerts": false,
+      "email_alerts": true,
+      "links": {
+        "user": 123474
+      }
+    },
+    {
+      "id": 123474,
+      "type": "user",
+      "downtime_only": false,
+      "mobile_alerts": false,
+      "email_alerts": true,
+      "links": {
+        "user": 123475
+      }
+    }
+  ],
+  "links": {
+    "notification_channels.notification_channels": "/v2/notification_channels?ids={notification_channels_ids}",
+    "notification_channels.notification_channel": "/v2/notification_channels/{notification_channel_id}",
+    "notification_channels.user": "/v2/user/{user_id}"
+  }
+}

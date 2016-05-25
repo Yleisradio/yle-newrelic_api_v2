@@ -1,0 +1,60 @@
+{
+  "notification_channels": [
+    {
+      "id": 123466,
+      "type": "email",
+      "downtime_only": false,
+      "email": "mock@example.local"
+    },
+    {
+      "id": 123467,
+      "type": "webhook",
+      "downtime_only": false,
+      "url": "https://www.example.local",
+      "name": "Webhook",
+      "description": "Test Webhook"
+    },
+    {
+      "id": 123468,
+      "type": "notification_group",
+      "downtime_only": false,
+      "name": "Notification Group",
+      "links": {
+        "notification_channels": [
+          123466,
+          123467,
+          123471
+        ]
+      }
+    },
+    {
+      "id": 123469,
+      "type": "pager_duty",
+      "downtime_only": true,
+      "subdomain": "example",
+      "service": "PagerDuty"
+    },
+    {
+      "id": 123470,
+      "type": "hipchat",
+      "downtime_only": false,
+      "name": "HipChat",
+      "room": "Example"
+    },
+    {
+      "id": 123471,
+      "type": "user",
+      "downtime_only": false,
+      "mobile_alerts": false,
+      "email_alerts": true,
+      "links": {
+        "user": 123472
+      }
+    }
+  ],
+  "links": {
+    "notification_channels.notification_channels": "/v2/notification_channels?ids={notification_channels_ids}",
+    "notification_channels.notification_channel": "/v2/notification_channels/{notification_channel_id}",
+    "notification_channels.user": "/v2/user/{user_id}"
+  }
+}

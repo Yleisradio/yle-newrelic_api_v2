@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 123472,
+      "first_name": "Example",
+      "last_name": "User 1",
+      "email": "mock@example.local",
+      "role": "user"
+    },
+    {
+      "id": 123474,
+      "first_name": "Example",
+      "last_name": "User 2",
+      "email": "mock2@example.local",
+      "role": "user"
+    },
+    {
+      "id": 123474,
+      "first_name": "Example",
+      "last_name": "User 3",
+      "email": "mock3@example.local",
+      "role": "user"
+    }
+  ]
+}

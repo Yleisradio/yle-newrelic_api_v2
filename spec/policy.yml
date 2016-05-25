@@ -1,0 +1,51 @@
+rest_api_key: 1234567890abcdef098765431fedcba1234567890abcdef
+
+name: Test Policy
+
+conditions:
+  cpu:
+    critical:
+      threshold: 88
+      trigger_minutes: 10
+    caution:
+      threshold: 66
+      trigger_minutes: 10
+  disk_io:
+    critical:
+      threshold: 88
+      trigger_minutes: 10
+    caution:
+      threshold: 66
+      trigger_minutes: 10
+  fullest_disk:
+    critical:
+      threshold: 88
+      trigger_minutes: 10
+    caution:
+      threshold: 66
+      trigger_minutes: 10
+  memory:
+    critical:
+      threshold: 88
+      trigger_minutes: 10
+    caution:
+      threshold: 66
+      trigger_minutes: 10
+  server_downtime:
+    downtime:
+      trigger_minutes: 55
+      enabled: false
+
+notification_channels:
+  email:
+    - mock@example.local
+  webhook:
+    - Webhook
+  notification_group:
+    - Notification Group
+  pager_duty:
+    - PagerDuty
+  hipchat:
+    - HipChat
+  user:
+    - mock@example.local
