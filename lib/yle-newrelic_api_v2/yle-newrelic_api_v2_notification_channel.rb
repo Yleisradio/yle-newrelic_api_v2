@@ -1,5 +1,5 @@
-require_relative '../newrelic_api'
-require_relative 'newrelic_api_user'
+require_relative '../yle-newrelic_api_v2'
+require_relative 'yle-newrelic_api_v2_user'
 
 module Yle
   module NewRelicApi

@@ -1,6 +1,6 @@
 require 'yaml'
 require 'webmock/rspec'
-require_relative '../lib/newrelic_api/newrelic_api_alert_policy'
+require_relative '../lib/yle-newrelic_api_v2/yle-newrelic_api_v2_alert_policy'
 
 RSpec.describe Yle::NewRelicApi::AlertPolicy do
   before(:each) do

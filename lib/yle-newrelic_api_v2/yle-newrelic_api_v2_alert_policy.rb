@@ -1,5 +1,5 @@
-require_relative '../newrelic_api'
-require_relative 'newrelic_api_notification_channel'
+require_relative '../yle-newrelic_api_v2'
+require_relative 'yle-newrelic_api_v2_notification_channel'
 
 module Yle
   module NewRelicApi

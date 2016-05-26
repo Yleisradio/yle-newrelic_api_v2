@@ -1,4 +1,4 @@
-require_relative '../lib/newrelic_api/newrelic_api_user'
+require_relative '../lib/yle-newrelic_api_v2/yle-newrelic_api_v2_user'
 
 RSpec.describe Yle::NewRelicApi::User do
   before(:each) do

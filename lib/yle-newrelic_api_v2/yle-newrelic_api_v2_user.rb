@@ -1,4 +1,4 @@
-require_relative '../newrelic_api'
+require_relative '../yle-newrelic_api_v2'
 
 module Yle
   module NewRelicApi

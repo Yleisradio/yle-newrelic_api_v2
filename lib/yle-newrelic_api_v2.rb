@@ -4,10 +4,10 @@ require 'net/http'
 require 'json'
 require 'yaml'
 
-require_relative 'newrelic_api/newrelic_api_user'
-require_relative 'newrelic_api/newrelic_api_notification_channel'
-require_relative 'newrelic_api/newrelic_api_alert_policy'
-require_relative 'newrelic_api/newrelic_api_servers'
+require_relative 'yle-newrelic_api_v2/yle-newrelic_api_v2_user'
+require_relative 'yle-newrelic_api_v2/yle-newrelic_api_v2_notification_channel'
+require_relative 'yle-newrelic_api_v2/yle-newrelic_api_v2_alert_policy'
+require_relative 'yle-newrelic_api_v2/yle-newrelic_api_v2_servers'
 
 module Yle
   module NewRelicApi

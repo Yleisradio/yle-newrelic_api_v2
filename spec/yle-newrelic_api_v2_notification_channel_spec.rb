@@ -1,5 +1,5 @@
 # encoding: UTF-8
-require_relative '../lib/newrelic_api/newrelic_api_notification_channel'
+require_relative '../lib/yle-newrelic_api_v2/yle-newrelic_api_v2_notification_channel'
 
 RSpec.describe Yle::NewRelicApi::NotificationChannel do
   before(:each) do
